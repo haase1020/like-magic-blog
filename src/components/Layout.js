@@ -16,10 +16,12 @@ const Layout = ({ children }) => {
   }
   return (
     <>
+    <div className="page-wrapper">
       <Navbar toggle={toggle}></Navbar>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <main>{children}</main>
       <Footer />
+      </div>
     </>
   )
 }
