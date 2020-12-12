@@ -1,5 +1,7 @@
 # GATSBY MDX BLOG
 
+- my personal blog where I share all that I am learning and discovering as a software engineer!
+
 ## Project Setup
 
 1. Base - Gatsby Starter
