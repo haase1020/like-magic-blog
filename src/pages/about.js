@@ -8,8 +8,8 @@ const AboutPage = () => {
     <Layout>
       <SEO title="About Mandi" />
       <Hero />
-      <div className="about-wrapper">
-        <h2>Hi there!</h2>
+      <div className="container">
+        <h2 className="heading-cursive">Hi there!</h2>
         <p>
           My name is Mandi and I currently work as a software engineer at
           Prenda. Software engineering is a big career shift for me. I was a

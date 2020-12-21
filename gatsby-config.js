@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title:`Like Magic Blog`,
-    description:`Mandi Haase's blog built with Gatsby`,
+    title: `Like Magic Blog`,
+    description: `Mandi Haase's blog built with Gatsby`,
     titleTemplate: `%s | Like Magic Blog`,
-    url:``,
-    image:`believe.png`,
-    twitterUsername:`@mandi_haase`,
+    url: ``,
+    image: `believe.png`,
+    twitterUsername: `@mandi_haase`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -45,6 +45,9 @@ module.exports = {
           },
           {
             family: `Open Sans`,
+          },
+          {
+            family: `Paprika`,
           },
         ],
       },
