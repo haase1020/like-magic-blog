@@ -12,7 +12,7 @@ const PostsPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Posts" />
-      <Hero showPerson />
+      <Hero />
       <Posts posts={posts} title="all posts" />
     </Layout>
   )

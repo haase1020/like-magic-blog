@@ -387,14 +387,32 @@ Hero
 ===============
 */
 .hero {
-  background: url('../assets/vector.svg');
+  background: url('../assets/vector.svg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   opacity: 0.5;
-  /* background: var(--clr-primary-10); */
+
   height: 10rem;
   position: relative;
   z-index: -1;
   margin-bottom: 6rem;
   margin-top: 2rem;
+  padding-bottom: 10rem;
+}
+.hero-person {
+  width: 10%;
+  height: 10rem;
+  display: block;
+  position: relative;
+  bottom: 15%;
+  margin-left: 70%;
+  transform: translate(-20%, 20%);
+  z-index: 4;
+  transition: var(--transition);
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 .hero::after {
@@ -408,9 +426,6 @@ Hero
   background-size: cover;
 }
 
-.hero-person:hover {
-  opacity: 1.5;
-}
 @media screen and (min-width: 800px) {
   .hero {
     height: 20rem;
@@ -419,7 +434,7 @@ Hero
     width: 10%;
     height: 10rem;
     display: block;
-    position: absolute;
+    position: relative;
     bottom: 15%;
     margin-left: 70%;
     transform: translate(-20%, 20%);
@@ -447,17 +462,6 @@ Hero
       bottom: 15%;
     }
   }
-
-  .hero-person:hover {
-    transition: all 1s;
-    -webkit-transform: rotateZ(30deg);
-    -ms-transform: rotateZ(30deg);
-    transform: rotateZ(30deg);
-  }
-
-  /* .hero-person:hover {
-    transform: translateY(-10%);
-  } */
 }
 .small-hero {
   height: 12rem;
@@ -466,9 +470,10 @@ Hero
 }
 /*
 ===============
-Posts Component
+Posts Component and posts index page
 ===============
 */
+
 .posts-center {
   width: 85vw;
   max-width: var(--max-width);
@@ -481,7 +486,6 @@ Posts Component
   color: var(--clr-primary-5);
   font-size: 1.25rem;
   margin-bottom: 2.5rem;
-  margin-left: 2rem;
 }
 
 @media screen and (min-width: 992px) {

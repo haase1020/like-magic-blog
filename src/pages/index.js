@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Hero showPerson />
+      <Hero />
       <Posts posts={posts} title="recently published" />
     </Layout>
   )

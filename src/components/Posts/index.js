@@ -4,10 +4,10 @@ import Banner from '../Banner'
 const Posts = ({ posts, title }) => {
   return (
     <section className="info">
-      <h3 className="posts-title">{title}</h3>
       <div className="posts-center">
         {/* posts column */}
         <article>
+          <h3 className="posts-title">{title}</h3>
           {posts.map(post => {
             return <Post key={post.id} {...post} />
           })}
