@@ -320,6 +320,7 @@ Navbar
     transform: translateY(-5px);
   }
 }
+
 /*
 ===============
 Sidebar 
@@ -387,17 +388,17 @@ Hero
 ===============
 */
 .hero {
-  background: url('../assets/vector.svg') no-repeat;
-  -webkit-background-size: cover;
+  /* height: 12rem; */
+  /* background: url('../assets/vector.svg'); */
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.5;
-
-  height: 10rem;
+  opacity: 0.5; */
+  width: 100%;
   position: relative;
   z-index: -1;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   margin-top: 2rem;
   padding-bottom: 10rem;
 }
@@ -420,19 +421,20 @@ Hero
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 6rem;
+  height: 100%;
   width: 100%;
   /* background: url('../assets/vector.svg'); */
   background-size: cover;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   .hero {
-    height: 20rem;
+    /* height: 20rem; */
+    background: none;
   }
   .hero-person {
     width: 10%;
-    height: 10rem;
+    /* height: 10rem; */
     display: block;
     position: relative;
     bottom: 15%;
@@ -443,24 +445,16 @@ Hero
     animation-duration: 3s;
     animation-name: slidein;
   }
-
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 10%;
-      bottom: 30%;
-    }
-
-    50% {
-      margin-left: 60%;
-      width: 10%;
-      bottom: 20%;
-    }
-    to {
-      margin-left: 70%;
-      width: 10%;
-      bottom: 15%;
-    }
+  @media screen and (max-width: 500px) {
+    /* .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 6rem;
+      width: 100%;
+      background-size: cover;
+    } */
   }
 }
 .small-hero {
@@ -481,10 +475,11 @@ Posts Component and posts index page
   margin-bottom: 4rem;
 }
 .posts-title {
-  font-weight: 700;
   text-transform: uppercase;
   color: var(--clr-primary-5);
-  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--clr-primary-5);
+  font-size: 1.5rem;
   margin-bottom: 2.5rem;
 }
 
@@ -748,8 +743,8 @@ About Page
   font-family: cursive;
   color: var(--clr-primary-5);
 }
-.heading-cursive {
+.heading-about {
   font-size: 2rem;
-  font-family: Paprika;
+  text-transform: uppercase;
   color: var(--clr-primary-5);
 }

@@ -9,7 +9,7 @@ const AboutPage = () => {
       <SEO title="About Mandi" />
       <Hero />
       <div className="container">
-        <h2 className="heading-cursive">Hi there!</h2>
+        <h2 className="heading-about">Hi there!</h2>
         <p>
           My name is Mandi Haase and I currently work as a software engineer at
           <a href="https://prendaschool.com/" alt="Prenda website">
