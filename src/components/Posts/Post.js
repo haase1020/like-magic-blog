@@ -5,31 +5,28 @@ import { IoMdArrowRoundForward } from 'react-icons/io'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const Post = ({frontmatter, excerpt}) => {
-
-  const {title, image, slug, date, category, readTime} = frontmatter
+const Post = ({ frontmatter, excerpt }) => {
+  const { title, image, slug, date, category, readTime } = frontmatter
   return (
-  <Wrapper>
-    <Image fluid={image.childImageSharp.fluid} className="img" />
-    <div className="info">
-      <span className="category">{category}</span>
-      <h3>{title}</h3>
-      <div className="underline"></div>
-      <p>{excerpt}</p>
-      <Link to={`/posts/${slug}`} className="link">
-        Continue reading <IoMdArrowRoundForward />
-      </Link>
-      <footer>
-        <span className="date">
-          <FaRegClock lasName="icon"></FaRegClock>
-          {date}
-        </span>
-        <span>
-          {readTime} min read
-        </span>
-      </footer>
-    </div>
-  </Wrapper>
+    <Wrapper>
+      <Image fluid={image.childImageSharp.fluid} className="img" />
+      <div className="info">
+        <span className="category">{category}</span>
+        <h3>{title}</h3>
+        <div className="underline"></div>
+        <p>{excerpt}</p>
+        <Link to={`/posts/${slug}`} className="link">
+          Continue reading <IoMdArrowRoundForward />
+        </Link>
+        <footer>
+          <span className="date">
+            <FaRegClock lasName="icon"></FaRegClock>
+            {date}
+          </span>
+          <span>{readTime} min read</span>
+        </footer>
+      </div>
+    </Wrapper>
   )
 }
 
@@ -37,6 +34,9 @@ const Wrapper = styled.article`
   margin-bottom: 3rem;
   .info {
     text-align: center;
+  }
+  .h2 {
+    color: var(--clr-grey-5);
   }
   .img {
     margin-bottom: 1rem;

@@ -8,33 +8,38 @@ const NewsLetter = () => {
       <SEO title="Newsletter" />
       <section className="newsletter-page">
         <div className="page-center">
-          <h2>Get all the latest</h2>
-          <h4>I write daily</h4>
-          <form className="contact-form"
-          name="testing-contact"
-          method="post"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
-          action="/success"
-          > 
-          <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="testing-contact" />
-            <input type="text" 
-            name="name" 
-            placeholder="your name"
-            className="form-control"
+          <h2>Let's Connect! 🌱 </h2>
+          <h4>
+            Subscribe for blogs about technology, education, learning, and
+            living simply
+          </h4>
+          <form
+            className="contact-form"
+            name="testing-contact"
+            method="post"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            action="/success"
+          >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="testing-contact" />
+            <input
+              type="text"
+              name="name"
+              placeholder="your name"
+              className="form-control"
             />
-            <input type="email" 
-            name="email" 
-            placeholder="your email"
-            className="form-control"
+            <input
+              type="email"
+              name="email"
+              placeholder="your email"
+              className="form-control"
             />
             <button type="submit" className="btn form-control submit-btn">
               subscribe
             </button>
           </form>
         </div>
-
       </section>
     </Layout>
   )

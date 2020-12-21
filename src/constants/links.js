@@ -1,13 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 const Links = ({ styleClass, children }) => {
   return (
     <ul className={styleClass}>
-      <li>
+      {/* <li>
         <Link to="/" className="page-link">
           Home
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link to="/posts" className="page-link">
           Posts
@@ -20,8 +20,8 @@ const Links = ({ styleClass, children }) => {
         </Link>
       </li>
       <li>
-        <Link to="/post" className="page-link">
-          Post
+        <Link to="/about" className="page-link">
+          About
         </Link>
       </li>
     </ul>
