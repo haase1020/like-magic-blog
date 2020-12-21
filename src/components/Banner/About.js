@@ -34,6 +34,11 @@ const Wrapper = styled.div`
   }
   .img {
     border-radius: 50%;
+    transition: all 1s;
+  }
+  .img:hover {
+    transition: all 1s;
+    box-shadow: 0 0 20px 10px var(--clr-primary-8);
   }
 `
 export default About

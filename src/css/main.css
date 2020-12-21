@@ -212,6 +212,11 @@ p {
 main {
   margin-top: -5rem;
 }
+
+.emphasize {
+  color: var(--clr-primary-6);
+  font-weight: 800;
+}
 /*
 ===============
 Navbar
@@ -415,7 +420,7 @@ Hero
     height: 10rem;
     display: block;
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     margin-left: 70%;
     transform: translate(-20%, 20%);
     z-index: 4;
@@ -428,13 +433,18 @@ Hero
     from {
       margin-left: 100%;
       width: 10%;
-      bottom: 20%;
+      bottom: 30%;
     }
 
+    50% {
+      margin-left: 60%;
+      width: 10%;
+      bottom: 20%;
+    }
     to {
       margin-left: 70%;
       width: 10%;
-      bottom: 20%;
+      bottom: 15%;
     }
   }
 

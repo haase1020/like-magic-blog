@@ -5,10 +5,9 @@ import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 import Title from './Title'
 
-
 const query = graphql`
   {
-    allMdx(sort: {fields: frontmatter___date, order: DESC}, limit: 5) {
+    allMdx(sort: { fields: frontmatter___date, order: DESC }, limit: 5) {
       nodes {
         frontmatter {
           title
@@ -28,34 +27,35 @@ const query = graphql`
   }
 `
 
-
 const Recent = () => {
-  const data = useStaticQuery(query);
+  const data = useStaticQuery(query)
 
-  const {allMdx:{nodes:posts}} = data
+  const {
+    allMdx: { nodes: posts },
+  } = data
   return (
-  <Wrapper>
-    <Title title="recent" />
-    {posts.map(post => {
-      const {
-        title,
-        slug, 
-        date, 
-        image:{
-          childImageSharp: { fluid },
-        },
-      } = post.frontmatter
-      return (
-       <Link to={`/posts/${slug}`} key={post.id} className="post">
-        <Image fluid={fluid} className="img"></Image>
-        <div>
-          <h5>{title}</h5>
-          <p>{date}</p>
-        </div>
-      </Link>
-    )
-    })}
-  </Wrapper>
+    <Wrapper>
+      <Title title="recent" />
+      {posts.map(post => {
+        const {
+          title,
+          slug,
+          date,
+          image: {
+            childImageSharp: { fluid },
+          },
+        } = post.frontmatter
+        return (
+          <Link to={`/posts/${slug}`} key={post.id} className="post">
+            <Image fluid={fluid} className="img"></Image>
+            <div>
+              <h5>{title}</h5>
+              <p>{date}</p>
+            </div>
+          </Link>
+        )
+      })}
+    </Wrapper>
   )
 }
 
@@ -68,6 +68,13 @@ const Wrapper = styled.div`
   }
   .img {
     border-radius: var(--radius);
+    transition: all 1s;
+  }
+  .img:hover {
+    transition: all 1s;
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
   }
   h5 {
     font-size: 0.7rem;

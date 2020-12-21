@@ -11,16 +11,23 @@ const AboutPage = () => {
       <div className="container">
         <h2 className="heading-cursive">Hi there!</h2>
         <p>
-          My name is Mandi and I currently work as a software engineer at
-          Prenda. Software engineering is a big career shift for me. I was a
-          Japanese translator and homeschooling mom before I decided to take the
-          plunge into software development.
+          My name is Mandi Haase and I currently work as a software engineer at
+          <a href="https://prendaschool.com/" alt="Prenda website">
+            {''} Prenda
+          </a>
+          . Software engineering is a <span className="emphasize">BIG</span>{' '}
+          career shift for me. I was a Japanese translator and homeschooling mom
+          before I decided to take the plunge into software development.
         </p>
         <p>
-          I graduated from Lambda School in August 2020, and have fallen in love
-          with web development. I wake up each morning to start the day coding,
-          and my husband has to set a timer in the evening letting me know it's
-          time to call it a day.
+          I graduated from{' '}
+          <a href="https://lambdaschool.com/" alt="Lambda School website">
+            Lambda School{' '}
+          </a>
+          in August 2020, and have fallen in love with web development. I wake
+          up each morning <span className="emphasize">THANKFUL</span> that I get
+          to code, and my husband has to set a timer in the evening letting me
+          know it's time to call it a day.
         </p>
         <p>
           As a "late bloomer" software engineer, I realize that time is of the
@@ -34,9 +41,8 @@ const AboutPage = () => {
           practicing Japanese, and power walking (or rowing and pilates when I
           can't get outside). I am an aspiring minimalist, and am constantly
           looking for ways to be better to our planet. I am a Christian and
-          thankful for God's daily sanctifying work in my life, and I hope that
-          in some small way I can share God's love with others through this
-          blog.
+          thankful for God's daily sanctifying work in my life. I hope that in
+          some small way I can share God's love with others through this blog.
         </p>
         <p className="about-quote">
           “If you’re always trying to be normal you will never know how amazing

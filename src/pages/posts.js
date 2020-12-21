@@ -5,22 +5,22 @@ import { graphql } from 'gatsby'
 import Posts from '../components/Posts'
 import SEO from '../components/SEO'
 
-
 const PostsPage = ({ data }) => {
-
-  const {allMdx:{nodes:posts}} = data;
+  const {
+    allMdx: { nodes: posts },
+  } = data
   return (
-  <Layout>
-    <SEO title="Posts" />
-  <Hero />
-  <Posts posts={posts} title="all posts" />
-  </Layout>
+    <Layout>
+      <SEO title="Posts" />
+      <Hero showPerson />
+      <Posts posts={posts} title="all posts" />
+    </Layout>
   )
 }
 
 export const query = graphql`
   {
-    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         excerpt
         frontmatter {
@@ -43,6 +43,5 @@ export const query = graphql`
     }
   }
 `
-
 
 export default PostsPage
