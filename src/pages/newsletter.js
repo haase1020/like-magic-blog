@@ -9,10 +9,12 @@ const NewsLetter = () => {
       <section className="newsletter-page">
         <div className="page-center">
           <h2>Let's Connect! 🌱 </h2>
-          <h4>
+          <br></br>
+          <h3>
             Subscribe for blogs about technology, education, learning, and
             living simply
-          </h4>
+          </h3>
+          <br></br>
           <form
             className="contact-form"
             name="testing-contact"

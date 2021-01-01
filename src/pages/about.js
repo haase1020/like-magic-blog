@@ -10,6 +10,7 @@ const AboutPage = () => {
       <Hero />
       <div className="container">
         <h2 className="heading-about">Hi there!</h2>
+        <br></br>
         <p>
           My name is Mandi Haase and I currently work as a software engineer at
           <a href="https://prendaschool.com/" alt="Prenda website">
@@ -35,6 +36,22 @@ const AboutPage = () => {
           competitive. This blog is comprised of my discoveries as a programmer,
           my thoughts regarding working as a woman in tech, and other random
           thoughts that might be of benefit to others.
+        </p>
+        <br></br>
+        <h3 className="subtitle-about">Why the name "Like Magic"?</h3>
+        <br></br>
+        <p>
+          I stumbled upon the name for this blog after saying more times than I
+          care to admit, "my code worked! It's like magic!" Of course,
+          programming is NOT magic - computers do exactly what we tell them to
+          do. However, when I finally accomplish things I was unable to
+          accomplish before, I always feel like a little magic happened. The
+          magic of understanding, of comprehension, and the magic of sticking
+          with problems until you finally solve them. It's all like magic!
+        </p>
+        <p>
+          That same magic occurs in all kinds of learning. It occurs learning
+          with kids, learning new languages... the possbilities are endless!
         </p>
         <p>
           In my spare time, I love homeschooling my four children, reading,
