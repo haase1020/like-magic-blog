@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Like Magic Blog`,
-    description: `Mandi Haase's blog built with Gatsby`,
+    description: `Mandi Haase's blog about homeschooling and programming`,
     titleTemplate: `%s | Like Magic Blog`,
     url: ``,
-    image: `believe.png`,
+    image: `home.png`,
     twitterUsername: `@mandi_haase`,
   },
   plugins: [

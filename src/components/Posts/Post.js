@@ -7,6 +7,7 @@ import styled from 'styled-components'
 
 const Post = ({ frontmatter, excerpt }) => {
   const { title, image, slug, date, category, readTime } = frontmatter
+  console.log('title', title)
   return (
     <Wrapper>
       <Image fluid={image.childImageSharp.fluid} className="img" />
@@ -20,7 +21,7 @@ const Post = ({ frontmatter, excerpt }) => {
         </Link>
         <footer>
           <span className="date">
-            <FaRegClock lasName="icon"></FaRegClock>
+            <FaRegClock className="icon"></FaRegClock>
             {date}
           </span>
           <span>{readTime} min read</span>
