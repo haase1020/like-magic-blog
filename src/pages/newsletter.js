@@ -8,12 +8,9 @@ const NewsLetter = () => {
       <SEO title="Newsletter" />
       <section className="newsletter-page">
         <div className="page-center">
-          <h2>Let's Connect! 🌱 </h2>
+          <h2>Let's Connect! </h2>
           <br></br>
-          <h3>
-            Subscribe for blogs about technology, education, learning, and
-            living simply
-          </h3>
+          <h3>🌱 Subscribe to my blog 🌱</h3>
           <br></br>
           <form
             className="contact-form"

@@ -22,7 +22,7 @@ const About = () => {
     <Wrapper>
       <Title title="Welcome!" />
       <Image fixed={data.person.childImageSharp.fixed} className="img" />
-      <p>I'm Mandi Haase, and I am so happy you are here~</p>
+      <p>I'm Mandi Haase, a software developer and homeschooling mom </p>
     </Wrapper>
   )
 }
